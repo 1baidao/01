@@ -3,150 +3,241 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>我没脑袋</title>
+    <title>我的主页</title>
+    <meta name="description" content="欢迎来到FanRec的个人主页" />
     <link
       rel="icon"
       href="https://img.picui.cn/free/2024/08/18/66c174b5f2aba.jpg"
     />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="article.css" />
+    <link rel="stylesheet" href="wave.css" />
     <style>
-      #vs-f {
-        color: rgb(124, 203, 135);
-        text-align: center;
+      body {
+        margin: 0;
+        height: 100vh;
       }
-      .littleHead{
-        color: rgb(233, 148, 242);
-        text-align: center;
-        line-height: 1.5;
-        font-size: 20px;
+
+      .flex-row {
+        display: flex;
+      }
+
+      .flex-col {
+        display: flex;
+        flex-direction: column;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .color-gray {
+        background-color: #f1f1f1;
+      }
+      .card-Shadow {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      }
+      .card-Shadow:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+      .blur-background {
+        height: 500px; /* 设置容器的高度 */
+        transition: filter 0.3s ease-in-out; /* 平滑过渡效果 */
+        background-image: url("https://img.picui.cn/free/2024/08/19/66c2de552a168.jpg");
+        background-size: cover; /* 背景图片覆盖整个容器 */
+        background-position: center; /* 背景图片居中对齐 */
+      }
+      .main {
+        background: linear-gradient(135deg, #4bc0c8, #c779d0, #feac5e);
       }
     </style>
   </head>
-  <body>
-    <div style="background-color: #f1f1f1; text-align: center; padding: 30px">
-      <img
-        src="https://img.picui.cn/free/2024/08/18/66c174b5f2aba.jpg"
-        alt="要长脑子了"
-        width="80"
-      />
-      <p>欢迎来到我的测试网站</p>
-    </div>
-    <div
-      style="
-        background-color: #f1f1f1;
-        margin: 30px auto;
-        padding: 15px;
-        line-height: 1.7;
-        color: goldenrod;
-      "
-    >
-      <h1 style="text-align: center">Welcome to 我没脑袋!</h1>
-      <p style="text-align: center">感谢你的访问，但我没有脑袋</p>
-      <p style="text-align: center">头好痒啊</p>
-      <p style="text-align: center">是不是要长脑袋了</p>
-      <p style="text-align: center">
-        在脑袋长出来之前，我就只能用打字来和你聊天了
-      </p>
-      <p
+  <body class="flex-col" style="height: 500vh">
+    <!-- 上图区 -->
+    <div class="blur-background"></div>
+    <!-- 主区域 -->
+    <div class="flex-row flex1 main">
+      <!-- 导航栏 -->
+      <div
+        class="flex-col color-gray"
         style="
-          color: rgb(237, 149, 149);
-          font-size: 25px;
-          line-height: 5px;
-          text-align: center;
+          width: 20%;
+          margin: 5px;
+          padding: 5px;
+          height: 90vh;
+          flex: 1;
+          position: sticky;
+          top: 0;
+          border: #c9c9c9 solid 3px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         "
       >
-        VS code 常见快捷键
-      </p>
-      <p id="vs-f">alt + 左键 //添加多个光标</p>
-      <p id="vs-f">ctrl + d 选中下一个相同字符</p>
-      <p id="vs-f">alt + shift + 上下键 //复制这一行的代码</p>
-      <p id="vs-f">ctrl + f //查找</p>
-      <p
+        <!-- 头像小卡片 -->
+        <div
+          class="card-Shadow flex-col"
+          style="
+            height: 150px;
+            margin-top: 20px;
+            margin-left: 5px;
+
+            margin-right: 5px;
+            color: white;
+            padding: 10px;
+            border: #e0847611 solid 6px;
+            box-shadow: 0 4px 8px rgba(72, 155, 255, 0.226);
+          "
+        >
+          <!-- 内部细节 -->
+          <div class="flex-row" style="margin: 0">
+            <img
+              src="https://img.picui.cn/free/2024/08/18/66c174b5f2aba.jpg"
+              alt="头像"
+              style="
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                margin-left: 15px;
+                margin-top: 10px;
+              "
+            />
+            <h3
+              style="
+                color: rgb(31, 31, 31);
+                margin-left: 30px;
+                margin-top: 22px;
+              "
+            >
+              我没脑袋
+            </h3>
+          </div>
+          <div
+            class="flex-row"
+            style="
+              margin-top: 0;
+              margin-left: 20px;
+              margin-right: 15px;
+              flex-wrap: wrap;
+            "
+          >
+            <p style="color: rgb(37, 37, 37)">
+              简介：头好痒啊，是不是要长脑袋了QWQ
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- 内容 -->
+      <div
+        class="flex-col color-gray"
         style="
-          color: rgb(237, 149, 149);
-          font-size: 25px;
-          line-height: 5px;
-          text-align: center;
+          margin: 5px;
+          flex: 4;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          border: #c9c9c9 solid 3px;
         "
       >
-        -=常用命令行指令=-
-      </p>
-      <p id="vs-f">pwd //显示当前目录路径</p>
-      <p id="vs-f">cd //切换目录</p>
-      <p id="vs-f">ls //显示当前目录下的文件</p>
-      <p id="vs-f">cd .. //返回上一级目录</p>
-      <p id="vs-f">cd ./(Path) //下一级目录</p>
-    <p
-    style="
-      color: rgb(237, 149, 149);
-      font-size: 25px;
-      line-height: 5px;
-      text-align: center;
-    "
-  >
-    -=Git命令=-
-  </p>
-<!-- 初始化-init -->
-  <p class="littleHead">初始化-init</p>
+        <!-- 选项栏 -->
+        <div
+          class="flex-row"
+          style="
+            justify-content: space-evenly;
+            height: 300px;
+            color: white;
+            margin: 25px;
+            padding: 5px;
+            flex-wrap: wrap;
+          "
+        >
+          <!-- 四模块 -->
+          <div
+            class="flex1 card-Shadow"
+            style="
+              margin: 20px;
+              padding: 10px;
+              background-color: #e3e3e3;
 
-  <p id="vs-f">git version //查看Git版本</p>
-  <p id="vs-f">git config --global user.name   //设置用户名</p>
-  <p id="vs-f">git config --global user.email //设置邮箱</p>
-  <p id="vs-f">git init //初始化仓库</p>
-<!-- 提交-commit -->
-   <p class="littleHead">提交-commit</p>
+              height: 200px;
+              border-radius: 15px;
+            "
+          ></div>
+          <div
+            class="flex1 card-Shadow"
+            style="
+              margin: 20px;
+              padding: 10px;
+              background-color: #e3e3e3;
 
-  <p id="vs-f">git add 文件吗 //添加文件</p>
-  <p id="vs-f">git add . //添加所有文件</p>
-  <p id="vs-f">git commit //提交(打开vim编辑器输入提交说明)</p>
-  <p id="vs-f">-vim中按a或i进入编辑模式 输入说明-</p>
-  <p id="vs-f">-编辑模式中按esc退出编辑模式，输入:wq保存并退出-</p>
-  <p id="vs-f">git commit -m "提交说明" //提交并添加说明(简化命令)</p>
-  <p id="vs-f">git log //查看提交记录</p>
-  <p id="vs-f">-vs code 有提交面板-</p>
-  <p id="vs-f">git reset --hard (id) //回退到指定版本（hard模式 丢弃工作区改动）</p>
-  <p id="vs-f">-有hard模式和soft模式和mixed模式-</p>
-<!-- 分支-branch -->
-  <p class="littleHead">分支-branch</p>
+              height: 200px;
+              border-radius: 15px;
+            "
+          ></div>
+          <div
+            class="flex1 card-Shadow"
+            style="
+              margin: 20px;
+              padding: 10px;
+              background-color: #e3e3e3;
 
-  <p id="vs-f">git branch (name) //创建分支</p>
-  <p id="vs-f">git checkout (name) //切换分支</p>
-  <p id="vs-f">git merge (name) //合并分支</p>
-  <p id="vs-f">git branch -d (name) //删除分支</p>
-  <p id="vs-f">git branch -D (name) //强制删除分支</p>
-<!-- github协同开发 -->
-  <p class="littleHead">github协同开发</p>
+              height: 200px;
+              border-radius: 15px;
+            "
+          ></div>
+          <div
+            class="flex1 card-Shadow"
+            style="
+              margin: 20px;
+              padding: 10px;
+              background-color: #e3e3e3;
 
-  <p id="vs-f">commit后git branch -M main /创建main分支，并把主分支切换为main</p>
-  <p id="vs-f">git remote add origin (url) //关联远程仓库(之后输入邮箱、密码)</p>
-  <p id="vs-f">git clone (url) .   //克隆远程仓库</p>
-  <p id="vs-f">git remote -v //查看远程仓库</p>
-  <p id="vs-f">git remote remove (remote-name) //删除远程仓库</p>
+              height: 200px;
+              border-radius: 15px;
+            "
+          ></div>
+        </div>
+        <!-- 内容区 -->
+        <div
+          class="flex-col color-gray flex1"
+          style="margin: 10px; padding: 10px"
+        >
+          <!-- 文章栏目 -->
+          <div class="article-card" data-href="./article1.html">
+            <img
+              src="https://via.placeholder.com/300"
+              alt="文章图片"
+              class="article-image"
+            />
+            <div class="article-content">
+              <h2 class="article-title">文章标题</h2>
+              <p class="article-description">
+                这里是文章的简介描述。你可以在这里添加更多的内容。
+              </p>
+            </div>
+          </div>
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              var articleCards = document.querySelectorAll(".article-card");
 
-  <p id="vs-f">git remote add upstream (url) //关联上游仓库</p>
-  <p id="vs-f">git branch -b (name) //创建并切换分支</p>
-  <p id="vs-f">-创建一个文件夹-</p>
-  <p id="vs-f">-创建一个json文件-</p>
-  <p id="vs-f">-写入{
-    name: "name",
-    url: "url"
-    }-</p>
-  <p id="vs-f">过一遍add commit后push</p>
-  <p id="vs-f">git push -u origin (name) //推送分支到远程仓库(末尾加 --force 强制提交)</p>
-  <p id="vs-f">-进入上游github进入pr提交-</p>
-  <p id="vs-f">git merge (name)/main //合并分支到主分支</p>
-
-</div>
-</div>
-    <div
-      style="
-        background-color: #f1f1f1;
-        text-align: center;
-        padding: 40px;
-        font-size: 12px;
-      "
-    >
-      <p>© 2024 我没脑袋. All rights reserved.</p>
-      <a href="https://bilibili.com">友情链接</a>
+              articleCards.forEach(function (card) {
+                card.addEventListener("click", function () {
+                  var href = card.getAttribute("data-href");
+                  if (href) {
+                    window.location.href = href;
+                  }
+                });
+              });
+            });
+          </script>
+        </div>
+      </div>
     </div>
+    <!-- 虚化 -->
+    <script>
+      const blurBackground = document.querySelector(".blur-background");
+
+      window.addEventListener("scroll", () => {
+        const scrollY = window.scrollY;
+        const blurValue = Math.min(scrollY / 100, 10); // 简单计算虚化程度，最多10px
+        blurBackground.style.filter = `blur(${blurValue}px)`;
+      });
+    </script>
   </body>
 </html>

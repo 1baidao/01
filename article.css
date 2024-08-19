@@ -1,0 +1,38 @@
+/* 文章栏目样式 */
+.article-card {
+  display: flex;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.article-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.article-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.article-content {
+  flex: 1;
+}
+
+.article-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.article-description {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}

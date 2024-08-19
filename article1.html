@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="Zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>我没脑袋</title>
+    <link
+      rel="icon"
+      href="https://img.picui.cn/free/2024/08/18/66c174b5f2aba.jpg"
+    />
+    <style>
+      #vs-f {
+        color: rgb(124, 203, 135);
+        text-align: center;
+      }
+      .littleHead{
+        color: rgb(233, 148, 242);
+        text-align: center;
+        line-height: 1.5;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="background-color: #f1f1f1;height: 100px;margin: 0;padding: 10px;">
+        <h1 style="text-align:center;color :rgb(223, 73, 73);">第一次<h1>
+    </div>
+    <div
+      style="
+        background-color: #f1f1f1;
+        margin: 30px auto;
+        padding: 15px;
+        line-height: 1.7;
+        color: goldenrod;
+      "
+    >
+      <h1 style="text-align: center">Welcome to 我没脑袋!</h1>
+      <p style="text-align: center">感谢你的访问，但我没有脑袋</p>
+      <p style="text-align: center">头好痒啊</p>
+      <p style="text-align: center">是不是要长脑袋了</p>
+      <p style="text-align: center">
+        在脑袋长出来之前，我就只能用打字来和你聊天了
+      </p>
+      <p
+        style="
+          color: rgb(237, 149, 149);
+          font-size: 25px;
+          line-height: 5px;
+          text-align: center;
+        "
+      >
+        VS code 常见快捷键
+      </p>
+      <p id="vs-f">alt + 左键 //添加多个光标</p>
+      <p id="vs-f">ctrl + d 选中下一个相同字符</p>
+      <p id="vs-f">alt + shift + 上下键 //复制这一行的代码</p>
+      <p id="vs-f">ctrl + f //查找</p>
+      <p
+        style="
+          color: rgb(237, 149, 149);
+          font-size: 25px;
+          line-height: 5px;
+          text-align: center;
+        "
+      >
+        -=常用命令行指令=-
+      </p>
+      <p id="vs-f">pwd //显示当前目录路径</p>
+      <p id="vs-f">cd //切换目录</p>
+      <p id="vs-f">ls //显示当前目录下的文件</p>
+      <p id="vs-f">cd .. //返回上一级目录</p>
+      <p id="vs-f">cd ./(Path) //下一级目录</p>
+    <p
+    style="
+      color: rgb(237, 149, 149);
+      font-size: 25px;
+      line-height: 5px;
+      text-align: center;
+    "
+  >
+    -=Git命令=-
+  </p>
+<!-- 初始化-init -->
+  <p class="littleHead">初始化-init</p>
+
+  <p id="vs-f">git version //查看Git版本</p>
+  <p id="vs-f">git config --global user.name   //设置用户名</p>
+  <p id="vs-f">git config --global user.email //设置邮箱</p>
+  <p id="vs-f">git init //初始化仓库</p>
+<!-- 提交-commit -->
+   <p class="littleHead">提交-commit</p>
+
+  <p id="vs-f">git add 文件吗 //添加文件</p>
+  <p id="vs-f">git add . //添加所有文件</p>
+  <p id="vs-f">git commit //提交(打开vim编辑器输入提交说明)</p>
+  <p id="vs-f">-vim中按a或i进入编辑模式 输入说明-</p>
+  <p id="vs-f">-编辑模式中按esc退出编辑模式，输入:wq保存并退出-</p>
+  <p id="vs-f">git commit -m "提交说明" //提交并添加说明(简化命令)</p>
+  <p id="vs-f">git log //查看提交记录</p>
+  <p id="vs-f">-vs code 有提交面板-</p>
+  <p id="vs-f">git reset --hard (id) //回退到指定版本（hard模式 丢弃工作区改动）</p>
+  <p id="vs-f">-有hard模式和soft模式和mixed模式-</p>
+<!-- 分支-branch -->
+  <p class="littleHead">分支-branch</p>
+
+  <p id="vs-f">git branch (name) //创建分支</p>
+  <p id="vs-f">git checkout (name) //切换分支</p>
+  <p id="vs-f">git merge (name) //合并分支</p>
+  <p id="vs-f">git branch -d (name) //删除分支</p>
+  <p id="vs-f">git branch -D (name) //强制删除分支</p>
+<!-- github协同开发 -->
+  <p class="littleHead">github协同开发</p>
+
+  <p id="vs-f">commit后git branch -M main /创建main分支，并把主分支切换为main</p>
+  <p id="vs-f">git remote add origin (url) //关联远程仓库(之后输入邮箱、密码)</p>
+  <p id="vs-f">git clone (url) .   //克隆远程仓库</p>
+  <p id="vs-f">git remote -v //查看远程仓库</p>
+  <p id="vs-f">git remote remove (remote-name) //删除远程仓库</p>
+
+  <p id="vs-f">git remote add upstream (url) //关联上游仓库</p>
+  <p id="vs-f">git branch -b (name) //创建并切换分支</p>
+  <p id="vs-f">-创建一个文件夹-</p>
+  <p id="vs-f">-创建一个json文件-</p>
+  <p id="vs-f">-写入{
+    name: "name",
+    url: "url"
+    }-</p>
+  <p id="vs-f">过一遍add commit后push</p>
+  <p id="vs-f">git push -u origin (name) //推送分支到远程仓库(末尾加 --force 强制提交)</p>
+  <p id="vs-f">-进入上游github进入pr提交-</p>
+  <p id="vs-f">git merge (name)/main //合并分支到主分支</p>
+
+</div>
+</div>
+  </body>
+</html>
